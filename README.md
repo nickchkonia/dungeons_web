@@ -6,7 +6,7 @@ Web interface for backend logic
 flask_app/
 ├── app/
 │   ├── __init__.py          # Flask app factory (builds the app)
-│   ├── controllers/
+│   ├── routes/
 │   │   ├── __init__.py      # Optional: consolidates imports for controllers
 │   │   └── example_controller.py
 │   ├── services/
@@ -14,7 +14,9 @@ flask_app/
 │   │   └── example_service.py
 │   ├── utils/               # Optional: for helper functions
 │   │   └── __init__.py
-│   └── config.py            # App configurations
+│   ├── config/              # App configurations 
+│   │   └── __init__.py
+│   └── config.py            
 ├── run.py                   # Entry point for the Flask app
 ├── requirements.txt         # Python dependencies
 └── .env                     # Environment variables
